@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checked-inderteminate</title>
+    <style>
+        input {
+            accent-color: red;
+        }
+
+        input[type="checkbox"]:checked+label {
+            text-decoration: line-through;
+        }
+        progress:indeterminate {
+            accent-color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <input type="checkbox" id="todo1">
+        <label for="todo1">Todo 1</label>
+    </div>
+    <div>
+        <input type="checkbox" id="todo2">
+        <label for="todo2">Todo 2</label>
+    </div>
+    <div>
+        <input type="checkbox" id="todo3">
+        <label for="todo3">Todo 3</label>
+    </div>
+    <div>
+        <input type="checkbox" id="todo4">
+        <label for="todo4">Todo 4</label>
+    </div>
+    <hr>
+    <input id="masculino" name="sexo" type="radio">
+    <label for="masculino">Masculino</label>
+    <input type="radio" name="sexo" id="feminino">
+    <label for="feminino">Feminino</label>
+    <hr>
+    <progress></progress>
+</body>
+
+</html>

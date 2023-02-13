@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth-child nth-of-type</title>
+    <style>
+        table,
+        th,
+        tr,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 3px;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: lightgrey;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: lightgoldenrodyellow;
+        }
+
+        tr:nth-child(2) {
+            color: red;
+        }
+
+        tbody tr:nth-of-type(5) {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    Produto
+                </th>
+                <th>
+                    Valor
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lorem ipsum dolor sit amet</td>
+                <td>R$ 000,00</td>
+            </tr>
+            <tr>
+                <td>Lorem ipsum dolor sit amet</td>
+                <td>R$ 000,00</td>
+            </tr>
+            <tr>
+                <td>Lorem ipsum dolor sit amet</td>
+                <td>R$ 000,00</td>
+            </tr>
+            <tr>
+                <td>Lorem ipsum dolor sit amet</td>
+                <td>R$ 000,00</td>
+            </tr>
+            <tr>
+                <td>Lorem ipsum dolor sit amet</td>
+                <td>R$ 000,00</td>
+            </tr>
+            <tr>
+                <td>Lorem ipsum dolor sit amet</td>
+                <td>R$ 000,00</td>
+            </tr>
+            <tr>
+                <td>Lorem ipsum dolor sit amet</td>
+                <td>R$ 000,00</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

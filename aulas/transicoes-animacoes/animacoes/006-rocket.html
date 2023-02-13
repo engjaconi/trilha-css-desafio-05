@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rocket</title>
+    <style>
+        body {
+            height: 100vh;
+            background: linear-gradient( darkslategray, gray, lightblue);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
+            animation: take-off-rocket 8s infinite ease-in-out alternate;
+        }
+
+        img {
+            width: 500px;
+        }
+
+        @keyframes take-off-rocket {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-100vh);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+    </div>
+    <img src="./rocket.png" alt="rocket">
+</body>
+</html>

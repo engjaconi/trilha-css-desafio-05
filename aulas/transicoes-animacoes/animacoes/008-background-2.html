@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background</title>
+    <style>
+        body {
+            height: 100vh;
+            background:  darkslategrey;
+            background-size: 400%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 3rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            color: white;
+        }
+
+        .gradient-word {
+            font-family: cursive;
+            font-size: 5rem;
+            background: linear-gradient(0deg, transparent, black);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        blockquote,
+        h1,
+        .gradient-word {
+            margin: 0;
+            line-height: 1;
+            margin-bottom: -40px;
+        }
+
+        .box {
+            position: absolute;
+            background: linear-gradient(90deg, white, lightblue);
+            border-radius: 50%;
+            width: 250px;
+            height: 250px;
+            filter: blur(150px);
+            animation: exemple 10s infinite alternate;
+        }
+
+        @keyframes exemple {
+            0% {
+                transform: rotateY(50deg) rotate(-25deg) translateZ(100px);
+            }
+            25% {
+                transform: rotateY(-30deg) translateZ(100px);
+            }
+
+            50% {
+                transform: rotateX(-50deg) translateZ(-100px);
+            }
+
+            75% {
+                transform: rotateX(-50deg) translateZ(-100px);
+            }
+
+            100% {
+                transform: rotateX(20deg) translateZ(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <p class="gradient-word">tiago jaconi</p>
+    <h1>show me the code!</h1>
+</body>
+
+</html>

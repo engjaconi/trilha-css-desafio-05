@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background</title>
+    <style>
+        body {
+            height: 100vh;
+            background: linear-gradient(45deg, orange, darkslategrey);
+            background-size: 400%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 3rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            color: white;
+            animation: gradient 10s infinite alternate;
+        }
+
+        .gradient-word {
+            font-family: cursive;
+            font-size: 5rem;
+            background: linear-gradient(0deg, transparent, black);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        blockquote,
+        h1,
+        .gradient-word {
+            margin: 0;
+            line-height: 1;
+            margin-bottom: -40px;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+                color: darkslategrey;
+            }
+
+            50% {
+                background-position: 100% 50%;
+                color: orange;
+            }
+
+            100% {
+                background-position: 0% 50%;
+                color: darkslategrey;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <blockquote>
+        <p class="gradient-word">tiago jaconi</p>
+        <h1>show me the code!</h1>
+    </blockquote>
+</body>
+
+</html>

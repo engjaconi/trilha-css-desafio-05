@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>valid invalid in-range out-ofrange</title>
+    <style>
+        * {
+            font-size: 1.5rem;
+        }
+
+        span {
+            font-size: .8rem;
+            display: none;
+            color: red;
+            margin-top: 5px;
+        }
+
+        input:in-range {
+            color: blue;
+        }
+        input:out-of-range {
+            color: red;
+        }
+        input:valid + .error {
+            display: none;
+        }
+        input:invalid + .error{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <label for="idade">Idade:</label>
+        <input type="number" min="18" max="120">
+        <span class="error">A idade deve ser maior ou igual a 18 anos ou menor que 121 anos</span>
+    </div>
+</body>
+
+</html>

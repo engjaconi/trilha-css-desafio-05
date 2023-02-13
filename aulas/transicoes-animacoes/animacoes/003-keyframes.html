@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyframes</title>
+    <style>
+       body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            perspective: 300px;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(153, 48, 206);
+            animation-name: zoom;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate; /* inicio fim, fim inicio*/
+        }
+
+        div:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes zoom {
+            0% {
+                width: 200px;
+            }
+            50% {
+                width: 400px;
+                background-color: rgb(186, 77, 233);
+            }
+            100% {
+                width: 100px;
+                background-color: rgb(91, 29, 122);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

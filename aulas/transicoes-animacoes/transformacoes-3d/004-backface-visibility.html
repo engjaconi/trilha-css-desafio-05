@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>backface-visibility</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            perspective: 300px;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(90deg, blue, red);
+            transition: 1s;
+            backface-visibility: hidden;
+        }
+
+        div:hover {
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <p>Ao girar o elemento o fundo não é exibido</p>
+    <hr>
+    <div></div>
+</body>
+</html>

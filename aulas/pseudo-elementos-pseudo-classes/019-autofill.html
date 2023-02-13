@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>autofill</title>
+    <style>
+        div{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+        }
+
+        input:-webkit-autofill {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <input type="text" id="name" required minlength="5">
+        <label for="name">Nome:</label>
+    </div>
+</body>
+
+</html>

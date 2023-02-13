@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>is where</title>
+    <style>
+        div :is(p, span) {
+            background-color: lightcyan;
+            color: blue;
+        }
+
+        div :where {
+            background-color: lightcyan;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <p>O where tem peso menor que o is e demais seleções, mas a função é a mesma.</p>
+    <div></div>
+    <div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora ab perferendis ullam fugit fugiat veritatis
+            architecto ad facere cumque ex soluta vero repellat nesciunt dolorum eaque, quisquam neque pariatur! Qui.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, accusantium molestiae. Fugit, tempora vel,
+            voluptatum voluptate laborum consequatur fugiat veritatis doloribus tenetur sequi provident eos sapiente,
+            magni
+            id praesentium nam.</p>
+        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi dolor sapiente similique exercitationem
+            optio reprehenderit. Totam rerum tenetur fuga quod voluptatem, earum inventore non ducimus, commodi adipisci
+            illo magnam neque?</span>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis id voluptates soluta minus! Accusamus
+            nostrum
+            delectus impedit accusantium, dolorum quisquam voluptate ipsa adipisci animi cum eligendi. Nemo architecto
+            quos
+            cupiditate.</p>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, aut voluptates adipisci quae, unde quas
+            dolorum
+            optio commodi fugiat dolores consectetur exercitationem voluptatum beatae! In obcaecati adipisci officiis
+            perferendis ad.</p>
+    </div>
+</body>
+
+</html>

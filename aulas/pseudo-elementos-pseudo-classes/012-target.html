@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>target</title>
+    <style>
+        a {
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: lightcoral;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        p:target {
+            background: lightgray;
+        }
+
+        p:target::before {
+            content: '>>';
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#p1">p1</a>
+    <a href="#p2">p2</a>
+    <a href="#p3">p3</a>
+    <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis cumque mollitia amet quae, soluta
+        explicabo veniam quia deleniti temporibus eum quis laborum natus dolor sed vero! Quibusdam explicabo saepe
+        accusantium!</p>
+    <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, adipisci totam ex ratione iste eum
+        necessitatibus non culpa corrupti exercitationem amet nemo incidunt maxime quam vel esse aut harum praesentium.
+    </p>
+</body>
+
+</html>
