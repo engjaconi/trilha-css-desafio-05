@@ -254,6 +254,87 @@ li {
     border-radius: 500px;
 }
 
+.universes {
+    padding: 100px 20px;
+}
+
+.universes__title {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.universes__gallery {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    width: 320px;
+    margin: auto;
+}
+
+.universes__gallery div {
+    width: 310px;
+    min-width: 310px;
+    height: 500px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 1s;
+}
+
+.universes__gallery div:hover {
+    border: 2px solid var(--tertiary-color)
+}
+
+
+.gallery__hbo {
+    background-image: url('../images/hbo-default_0.webp');
+}
+
+.gallery__hbo:hover {
+    background-image: url('../images/hbo-hover_0.webp');
+}
+
+.gallery__max {
+    background-image: url('../images/MAX-Default.webp');
+}
+
+.gallery__max:hover {
+    background-image: url('../images/MAX-Hover.webp');
+}
+
+.gallery__dc {
+    background-image: url('../images/DC_Default.webp');
+}
+
+.gallery__dc:hover {
+    background-image: url('../images/DC-Hover.webp');
+}
+
+.gallery__wb {
+    background-image: url('../images/WB-Default.webp');
+}
+
+.gallery__wb:hover {
+    background-image: url('../images/WB-Hover.webp');
+}
+
+.gallery__cn {
+    background-image: url('../images/CN-Default.webp');
+}
+
+.gallery__cn:hover {
+    background-image: url('../images/CN-Hover.png');
+}
+
+.gallery__champions {
+    background-image: url('../images/UCL-Default.webp');
+}
+
+.gallery__champions:hover {
+    background-image: url('../images/UCL-Hover.webp');
+}
+
 @media screen and (min-width: 768px) {
     nav {
         flex-direction: row;
@@ -316,6 +397,14 @@ li {
 
     .subscribe__content:has(#subscribe__card--2:hover) #subscribe__card--1 {
         transform: rotateY(45deg);
+    }
+
+    .universes__gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
     }
 }
 
