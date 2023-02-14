@@ -335,6 +335,35 @@ li {
     background-image: url('../images/UCL-Hover.webp');
 }
 
+.footer__link,
+.footer__licence {
+    color: var(--link-color);
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+    font-weight: bold;
+    gap: 20px;
+}
+
+.footer__licence {
+    font-size: 12px;
+    text-align: center;
+    margin: 20px 40px 80px 40px;
+}
+
+.footer__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 40px;
+}
+
 @media screen and (min-width: 768px) {
     nav {
         flex-direction: row;
@@ -402,9 +431,19 @@ li {
     .universes__gallery {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-evenly;
         width: 80%;
         margin: auto;
+    }
+
+    .footer__links {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .footer__link:hover {
+        color: var(--text-color);
+        transition: 1s;
     }
 }
 
